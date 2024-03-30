@@ -10,6 +10,12 @@ github.com/go-playground/validator/v10 v10.12.0 h1:E4gtWgxWxp8YSxExrQFv5BpCahla0
 github.com/go-playground/validator/v10 v10.12.0/go.mod h1:hCAPuzYvKdP33pxWa+2+6AIKXEKqjIUyqsNCtbsSJrA=
 github.com/gorilla/websocket v1.5.0 h1:PPwGk2jz7EePpoHN/+ClbZu8SPxiqlu12wZP/3sWmnc=
 github.com/gorilla/websocket v1.5.0/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
+github.com/kstenerud/go-describe v1.2.13 h1:3EazEwS/oNw0uMGQt45UvuxNNVEjR65dkAoy3CtiQN8=
+github.com/kstenerud/go-describe v1.2.13/go.mod h1:+B7K/fXHhObqwmMhcUT0CPT68fR1SQ9XNmJ5E4ck2RI=
+github.com/kstenerud/go-duplicates v1.1.1 h1:Z8pdWHv842d/vszSeoWGAswbxx/8SHxz+/DNYQUl4jU=
+github.com/kstenerud/go-duplicates v1.1.1/go.mod h1:OoPQ8B7sw/LFlPpLJT6bbCrHdOtaC9yWBF1uZXqOoxw=
+github.com/kstenerud/go-uleb128 v1.1.0 h1:QrNuuZVFkNvn3tEEJHDSUZRckNZt1haE23uYPKJ8qAA=
+github.com/kstenerud/go-uleb128 v1.1.0/go.mod h1:0DgQsdpP8sW2B3Qd2yx3vO7oaGNqDUZW7h4PoKIQj14=
 github.com/leodido/go-urn v1.2.2 h1:7z68G0FCGvDk646jz1AelTYNYWrTNm0bEcFAo147wt4=
 github.com/leodido/go-urn v1.2.2/go.mod h1:kUaIbLZWttglzwNuG0pgsh5vuV6u2YcGBYz1hIPjtOQ=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

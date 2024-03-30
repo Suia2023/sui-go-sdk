@@ -1,15 +1,16 @@
 package models
 
 import (
+	"bytes"
 	"crypto"
 	"crypto/ed25519"
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
+	"github.com/block-vision/sui-go-sdk/constant"
+	"github.com/kstenerud/go-uleb128"
 	"log"
 	"strings"
-
-	"github.com/block-vision/sui-go-sdk/constant"
 
 	"golang.org/x/crypto/blake2b"
 )
@@ -182,7 +183,11 @@ func parseSignatureScheme(scheme byte) string {
 }
 
 func VerifyPersonalMessage(message string, signature string) (signer string, pass bool, err error) {
-	b64Message := base64.StdEncoding.EncodeToString([]byte(message))
+	messageLen := len(message)
+	buff := &bytes.Buffer{}
+	uleb128.EncodeUint64(uint64(messageLen), buff)
+	bcsEncodedMessage := append(buff.Bytes(), []byte(message)...)
+	b64Message := base64.StdEncoding.EncodeToString(bcsEncodedMessage)
 	return VerifyMessage(b64Message, signature, constant.PersonalMessageIntentScope)
 }
 
